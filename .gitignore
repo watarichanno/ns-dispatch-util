@@ -1,0 +1,8 @@
+# Artifacts
+node_modules/
+dist/
+
+# Tool files
+.eslintcache
+.vscode/
+*.code-workspace

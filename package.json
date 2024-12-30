@@ -1,0 +1,42 @@
+{
+  "name": "@tsp-dev/ns-dispatch-util",
+  "version": "1.0.0",
+  "description": "A library to format and update dispatches on NationStates",
+  "license": "MIT",
+  "author": "USoVietnam <watarichanno@gmail.com>",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "check": "eslint --cache && prettier --check .",
+    "fix": "eslint --fix --cache && prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "3.4.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2"
+  },
+  "dependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.10.2",
+    "@types/nunjucks": "^3.2.6",
+    "bbcode-parser": "^1.0.10",
+    "markdown-it": "^14.1.0",
+    "nunjucks": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --fix --cache",
+    "*": "prettier --write --ignore-unknown"
+  }
+}
