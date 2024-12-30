@@ -4,6 +4,10 @@
   "description": "A library to format and update dispatches on NationStates",
   "license": "MIT",
   "author": "USoVietnam <watarichanno@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "github:watarichanno/ns-dispatch-util.git"
+  },
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
