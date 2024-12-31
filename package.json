@@ -14,7 +14,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "check": "eslint --cache && prettier --check .",
+    "check": "tsc --noEmit && eslint --cache && prettier --check .",
     "fix": "eslint --fix --cache && prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
@@ -40,7 +40,10 @@
     "nunjucks": "^3.2.4"
   },
   "lint-staged": {
-    "*.ts": "eslint --fix --cache",
+    "*.ts": [
+      "eslint --fix --cache",
+      "prettier --write"
+    ],
     "*": "prettier --write --ignore-unknown"
   }
 }
